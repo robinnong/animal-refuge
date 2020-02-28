@@ -1,2 +1,2 @@
 # Bootcamp Project 1 : PSD Conversion
-Design provided by Juno College for purpose of a psd conversion exercise using html, css and floats (no flex-box).
+"Animal Refuge" design provided by Juno College for the purpose of a psd conversion exercise using html, css and floats (no flex-box).
