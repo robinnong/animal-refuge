@@ -383,6 +383,10 @@ button[type="submit"] {width: 150px;}
     p,
     input {font-size: 1.6rem;}
 
+    .footer-nav {
+        font-size: 2rem;
+    }
+
     h1 {
         text-align: left;
         top: 0;
