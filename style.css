@@ -1,0 +1,499 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* GLOBAL DEFAULT STYLES */
+/* smooth scroll and default font size set */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 350px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 29px;
+}
+
+/* default wrapper - DO NOT CHANGE */
+.wrapper {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* removes default padding and margins*/
+ul,
+h1, 
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* removes list style bullets */
+ul {list-style-type: none;}
+
+/* removes link default colour and underline */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* makes images as wide as container and removes default white space */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-image img,
+.blog-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* removes default border and color */
+button {
+    background-color: inherit;
+    border: none;
+}
+
+/* BACKGROUND COLOURS */
+/* ALL dark green sections */
+footer,
+.featured,
+.divider {background-color: #152D20;}
+
+/* Read more links and subscribe button */
+.read-more,
+button[type="submit"] {
+    font-size: 1.8rem;
+    display: inline-block;
+    background-color:black;
+}
+
+/* FONT STYLING */
+/* All serif font type 1 */
+h1,
+h2, 
+h3,
+h4 {
+    font-family: 'Fredericka The Great', serif;
+    font-weight: 400;
+}
+
+/* All serif font type 2 */
+h5,
+nav,
+button,
+.divider,
+.read-more {font-family: "Cormorant Garamond", serif;}
+
+/* ALL white font text */
+header,
+footer,
+button, 
+.read-more,
+.featured,
+.divider {color: white;}
+
+/* ALL uppercase text */
+h1,
+h2,
+h3,
+h4,
+h5,
+nav,
+button,
+.read-more,
+.divider {text-transform: uppercase;}
+
+/* ALL text align center */
+h3,
+button,
+.socials,
+.divider,
+.subscribe,
+.footer-bar {text-align: center;}
+
+/* HEADINGS */
+h1 {
+    font-size: 12rem;
+    line-height: 117px;
+    text-align: right;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+h2 {
+    font-size: 5.1rem;
+    line-height: 49px;
+}
+
+h3 {
+    font-size: 4.9rem;
+    line-height: 49px;
+    margin: 0 auto 80px auto;
+}
+
+h4 {
+    font-size: 3.5rem;
+    line-height: 36px;
+}
+
+h5 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+h2,
+h4,
+h5 {margin-bottom: 20px;}
+
+/* makes headers sit on 2 lines */
+h1 span,
+h3 span,
+.divider span {display: block;}
+
+/* HEADER START */
+header {
+    height: 100vh;
+    padding: 50px 0;
+    background-image: url(assets/image-1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+header > div {position: relative;}
+
+/* mobile nav menu icon - not visible on desktop */
+.menu-icon {
+    font-size: 2.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+/* nav links */
+.header-nav li {
+    margin-right: 20px;
+    float: left;
+}
+
+/* social media links */
+.socials {
+    font-size: 2.4rem;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.socials li {margin: 10px 0;}
+/* HEADER END */
+
+/* MAIN START */
+/* 100px top and bottom padding for all sections except blog */
+.featured,
+section:not(:last-of-type),
+.footer-content {
+    padding: 100px 0;
+}
+
+/* featured article*/
+.featured-image,
+.featured-text {float: left;}
+
+.featured-image {
+    height: 300px;
+    width: 300px;
+    margin-right: 50px;
+}
+
+/* article text */
+.featured-text {
+    width: calc(100% - 300px - 50px);
+}
+
+/* ALL read more links */
+.read-more {padding: 10px 30px;}
+
+/* ONLY for the first read more link */
+.featured .read-more {
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+}
+
+/* 3-image gallery section*/
+.gallery {background-color:#C3D3CB;}
+
+/* sets width and float of gallery images */
+.gallery img {
+    width: calc((100% - 6%) /3);
+    float: left;
+}
+
+/* sets spacing between gallery images */
+.gallery img:not(:last-of-type) {margin-right: 3%;}
+
+/* divider section links */
+.divider a {
+    float: left;
+    width: calc(100%/3);
+}
+
+/* divider section icons */
+.divider i {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+/* divider section text */
+.divider p {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+/* blog section */
+.blog {
+    height: 1100px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* article image and text */
+.blog-text,
+.blog-image {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+/* article text */
+.blog-text {padding: 100px 80px;}
+
+.blog p {margin-bottom: 40px;}
+/* MAIN END */
+
+/* FOOTER START*/
+.footer-nav,
+.footer-content div {float: left;}
+
+.footer-nav,
+.contact {width: 25%;} 
+
+.subscribe {width: 50%;}
+
+/* newsletter subscription form */
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* makes email form aligned and the same height */
+input,
+button[type="submit"] {
+    float: left;
+    height: 50px;
+}
+
+/* email input field */
+input {
+    font-family: inherit;
+    width: calc(100% - 150px);
+    padding: 10px; 
+}
+
+/* subscribe button */
+button[type="submit"] {width: 150px;}
+
+/* contact information */
+.contact {text-align: right;}
+
+/* footer bar */
+.footer-bar {
+    background-color:black;
+    padding: 10px 0;
+}
+/* FOOTER END */
+
+/* MEDIA QUERIES */
+/* for small laptop screens */
+@media (max-width: 1100px) {
+    .blog,
+    .footer-nav ul {
+        height: auto;
+        text-align: center;
+    }
+
+    .blog-image,
+    .blog-text,
+    .footer-nav {
+        float: none;
+        width: 100%;
+    }
+
+    .blog-image {height: 300px;}
+    
+    .blog {position: relative;}
+
+    /* move zebra image to top of blog section */
+    .zebra-image {
+        position: absolute;
+        top: 0;
+    }
+
+    /* move zebra article text down 300px (equal to height of img) */
+    .zebra-text {
+        position: relative;
+        top: 300px;
+        margin-bottom: 300px;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .subscribe {
+        text-align: left;
+        width: 60%;
+        margin-top: 40px;
+    }
+
+    .contact {
+        width: 40%;
+        margin-top: 40px;
+    }
+}
+
+/* for tablet screens */
+@media (max-width: 768px) {
+    p,
+    input {font-size: 1.6rem;}
+
+    h1 {
+        text-align: left;
+        top: 0;
+        left: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 3.6rem;
+        line-height: 4rem;
+    }
+
+    h3 {margin-bottom: 40px;}
+
+    h4,
+    .footer-content div {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    
+    h5 {margin-bottom: 10px;}
+
+    /* removes floats */
+    /* makes elements as wide as container */
+    .featured-image,
+    .featured-text,
+    .divider a,
+    .footer-content div {
+        float: none;
+        width: 100%;
+    }
+
+    /* reduces top and bottom section padding */
+    .featured,
+    .footer-content,
+    section:not(:last-of-type) {padding: 50px 0;}
+
+    /* hides header navigation and social media links*/
+    .header-nav ul,
+    .socials {
+        height: 0;
+        overflow: hidden;
+    }
+
+    /* reveals mobile menu icon */
+    .menu-icon {visibility: visible;}
+
+    /* featured article image */
+    .featured-image {
+        height: 300px; 
+        margin: 0 0 50px 0;
+    }
+
+    /* centers read more button */
+    .featured a {
+        display: block;
+        margin: 0 auto;
+        width: max-content;
+    }
+
+    .gallery img:nth-of-type(2) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .divider a {display: block;}
+
+    .divider a:not(:last-of-type) {margin-bottom: 40px;}
+
+    .divider p {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+
+    .blog-text {padding: 50px 30px;}
+
+    .contact,
+    .subscribe {text-align: center;}
+}
+
+/* for mobile screens */
+@media (max-width: 480px) {
+    header {
+        padding-top: 25px;
+        background-position-x: -300px;
+    }
+
+    /* hides first of 3 gallery images */
+    .gallery img:first-of-type {display: none;}
+
+    /* resize gallery images to half */
+    .gallery img {width: calc(50% - 10px);}
+
+    /* resize blog post images */
+    .blog-image {height: 200px;}
+
+    .zebra-text {
+        top: 200px;
+        margin-bottom: 200px;
+    }
+    
+    /* subscription form */
+    input,
+    button[type="submit"] {width: 100%;}
+    
+    /* form input field */
+    input {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-nav li {margin: 0 1%;}
+}
