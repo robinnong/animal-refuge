@@ -249,7 +249,7 @@ section:not(:last-of-type),
 .gallery img:not(:last-of-type) {margin-right: 3%;}
 
 /* divider section links */
-.divider a {
+.divider li {
     float: left;
     width: calc(100%/3);
 }
@@ -411,7 +411,7 @@ button[type="submit"] {width: 150px;}
     /* makes elements as wide as container */
     .featured-image,
     .featured-text,
-    .divider a,
+    .divider li,
     .footer-content div {
         float: none;
         width: 100%;
@@ -450,9 +450,9 @@ button[type="submit"] {width: 150px;}
         margin-right: 0;
     }
 
-    .divider a {display: block;}
+    .divider li {display: block;}
 
-    .divider a:not(:last-of-type) {margin-bottom: 40px;}
+    .divider li:not(:last-of-type) {margin-bottom: 40px;}
 
     .divider p {
         font-size: 2.6rem;
