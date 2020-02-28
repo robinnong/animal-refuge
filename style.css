@@ -178,7 +178,7 @@ header > div {position: relative;}
 
 /* mobile nav menu icon - not visible on desktop */
 .menu-icon {
-    font-size: 2.8rem;
+    font-size: 3rem;
     position: absolute;
     right: 0;
     top: 0;
@@ -422,8 +422,7 @@ button[type="submit"] {width: 150px;}
     section:not(:last-of-type) {padding: 50px 0;}
 
     /* hides header navigation and social media links*/
-    .header-nav ul,
-    .socials {
+    header ul {
         height: 0;
         overflow: hidden;
     }
@@ -444,6 +443,7 @@ button[type="submit"] {width: 150px;}
         width: max-content;
     }
 
+    /* floats 2nd gallery image to right of section */
     .gallery img:nth-of-type(2) {
         float: right;
         margin-right: 0;
@@ -460,12 +460,14 @@ button[type="submit"] {width: 150px;}
 
     .blog-text {padding: 50px 30px;}
 
+    /* aligns text in center */
     .contact,
     .subscribe {text-align: center;}
 }
 
 /* for mobile screens */
 @media (max-width: 480px) {
+    /* reduces padding on header and re-positions background image */
     header {
         padding-top: 25px;
         background-position-x: -300px;
@@ -477,23 +479,26 @@ button[type="submit"] {width: 150px;}
     /* resize gallery images to half */
     .gallery img {width: calc(50% - 10px);}
 
-    /* resize blog post images */
+    /* resize all article images to 200px high*/
+    .featured-image,
     .blog-image {height: 200px;}
 
+    /* adjusts zebra article text due to image resizing */
     .zebra-text {
         top: 200px;
         margin-bottom: 200px;
     }
     
-    /* subscription form */
+    /* makes form field and button the full width of section*/
     input,
     button[type="submit"] {width: 100%;}
     
-    /* form input field */
+    /* centers form input field text */
     input {
         text-align: center;
         margin-bottom: 10px;
     }
 
+    /* resizes spacing between footer nav links */
     .footer-nav li {margin: 0 1%;}
 }
