@@ -383,10 +383,6 @@ button[type="submit"] {width: 150px;}
     p,
     input {font-size: 1.6rem;}
 
-    .footer-nav {
-        font-size: 2rem;
-    }
-
     h1 {
         text-align: left;
         top: 0;
@@ -492,6 +488,14 @@ button[type="submit"] {width: 150px;}
         top: 200px;
         margin-bottom: 200px;
     }
+
+    /* resized footer nav links to fit within a line on small screen */
+    .footer-nav {
+        font-size: 1.8rem;
+    }
+
+    /* resizes spacing between footer nav links */
+    .footer-nav li {margin: 0 1%;}
     
     /* makes form field and button the full width of section*/
     input,
@@ -502,7 +506,4 @@ button[type="submit"] {width: 150px;}
         text-align: center;
         margin-bottom: 10px;
     }
-
-    /* resizes spacing between footer nav links */
-    .footer-nav li {margin: 0 1%;}
 }
