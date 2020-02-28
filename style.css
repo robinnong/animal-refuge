@@ -248,7 +248,7 @@ section:not(:last-of-type),
 /* sets spacing between gallery images */
 .gallery img:not(:last-of-type) {margin-right: 3%;}
 
-/* divider section links */
+/* divider section links list items*/
 .divider li {
     float: left;
     width: calc(100%/3);
@@ -450,7 +450,6 @@ button[type="submit"] {width: 150px;}
         margin-right: 0;
     }
 
-    .divider li {display: block;}
 
     .divider li:not(:last-of-type) {margin-bottom: 40px;}
 
@@ -491,9 +490,7 @@ button[type="submit"] {width: 150px;}
     }
 
     /* resized footer nav links to fit within a line on small screen */
-    .footer-nav {
-        font-size: 2rem;
-    }
+    .footer-nav {font-size: 1.8rem;}
 
     /* resizes spacing between footer nav links */
     .footer-nav li {margin: 0 1%;}
