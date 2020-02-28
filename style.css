@@ -17,6 +17,7 @@ body {
     min-width: 350px;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 2rem;
+    font-weight: 300;
     line-height: 29px;
 }
 
@@ -491,7 +492,7 @@ button[type="submit"] {width: 150px;}
 
     /* resized footer nav links to fit within a line on small screen */
     .footer-nav {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     /* resizes spacing between footer nav links */
