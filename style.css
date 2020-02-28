@@ -451,7 +451,6 @@ button[type="submit"] {width: 150px;}
         margin-right: 0;
     }
 
-
     .divider li:not(:last-of-type) {margin-bottom: 40px;}
 
     .divider p {
@@ -491,10 +490,11 @@ button[type="submit"] {width: 150px;}
     }
 
     /* resized footer nav links to fit within a line on small screen */
-    .footer-nav {font-size: 1.8rem;}
-
     /* resizes spacing between footer nav links */
-    .footer-nav li {margin: 0 1%;}
+    .footer-nav li {
+        font-size: 1.8rem;
+        margin: 0 1%;
+    }
     
     /* makes form field and button the full width of section*/
     input,
