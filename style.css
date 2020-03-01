@@ -68,7 +68,7 @@ button {
 /* ALL dark green sections */
 footer,
 .featured,
-.divider {background-color: #152D20;}
+.site-links {background-color: #152D20;}
 
 /* Read more links and subscribe button */
 .read-more,
@@ -92,7 +92,7 @@ h4 {
 h5,
 nav,
 button,
-.divider,
+.site-links,
 .read-more {font-family: "Cormorant Garamond", serif;}
 
 /* ALL white font text */
@@ -101,7 +101,7 @@ footer,
 button, 
 .read-more,
 .featured,
-.divider {color: white;}
+.site-links {color: white;}
 
 /* ALL uppercase text */
 h1,
@@ -112,13 +112,13 @@ h5,
 nav,
 button,
 .read-more,
-.divider {text-transform: uppercase;}
+.site-links {text-transform: uppercase;}
 
 /* ALL text align center */
 h3,
 button,
 .socials,
-.divider,
+.site-links,
 .subscribe,
 .footer-bar {text-align: center;}
 
@@ -160,7 +160,7 @@ h5 {margin-bottom: 20px;}
 /* makes headers sit on 2 lines */
 h1 span,
 h3 span,
-.divider span {display: block;}
+.site-links span {display: block;}
 
 /* HEADER START */
 header {
@@ -245,19 +245,19 @@ section:not(:last-of-type),
 .gallery li:not(:last-of-type) {margin-right: 3%;}
 
 /* divider section links list items*/
-.divider li {
+.site-links li {
     float: left;
     width: calc(100%/3);
 }
 
 /* divider section icons */
-.divider i {
+.site-links i {
     font-size: 5rem;
     margin-bottom: 20px;
 }
 
 /* divider section text */
-.divider p {
+.site-links p {
     font-size: 3.5rem;
     line-height: 4rem;
 }
@@ -390,6 +390,7 @@ button[type="submit"] {width: 150px;}
 /* for iPad pro screen and smaller */
 @media (max-width: 834px) {
     p,
+    address,
     input {font-size: 1.6rem;}
 
     h1 {
@@ -419,7 +420,7 @@ button[type="submit"] {width: 150px;}
     /* makes elements as wide as container */
     .featured-image,
     .featured-text,
-    .divider li,
+    .site-links li,
     .footer-content div {
         float: none;
         width: 100%;
@@ -458,9 +459,9 @@ button[type="submit"] {width: 150px;}
         margin-right: 0;
     }
 
-    .divider li:not(:last-of-type) {margin-bottom: 40px;}
+    .site-links li:not(:last-of-type) {margin-bottom: 40px;}
 
-    .divider p {
+    .site-links p {
         font-size: 2.6rem;
         line-height: 3rem;
     }
