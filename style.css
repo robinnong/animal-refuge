@@ -52,13 +52,8 @@ a {
 
 /* makes images as wide as container and removes default white space */
 img {
-    width: 100%;
-    height: auto;
     display: block;
-}
-
-.featured-image img,
-.blog-image img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -241,13 +236,13 @@ section:not(:last-of-type),
 .gallery {background-color:#C3D3CB;}
 
 /* sets width and float of gallery images */
-.gallery img {
+.gallery-image {
     width: calc((100% - 6%) /3);
     float: left;
 }
 
 /* sets spacing between gallery images */
-.gallery img:not(:last-of-type) {margin-right: 3%;}
+.gallery li:not(:last-of-type) {margin-right: 3%;}
 
 /* divider section links list items*/
 .divider li {
@@ -458,7 +453,7 @@ button[type="submit"] {width: 150px;}
     }
 
     /* floats 2nd gallery image to right of section */
-    .gallery img:nth-of-type(2) {
+    .gallery li:nth-of-type(2) {
         float: right;
         margin-right: 0;
     }
@@ -521,10 +516,10 @@ button[type="submit"] {width: 150px;}
     }
 
     /* hides first of 3 gallery images */
-    .gallery img:first-of-type {display: none;}
+    .gallery li:first-of-type {display: none;}
 
     /* resize gallery images to half */
-    .gallery img {width: calc(50% - 10px);}
+    .gallery-image {width: calc(50% - 10px);}
 
     /* resize all article images to 200px high*/
     .featured-image,
