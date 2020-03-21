@@ -186,7 +186,12 @@ header > div {position: relative;}
 .header-nav li {
     margin-right: 20px;
     float: left;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
 }
+
+.header-nav li:hover,
+.header-nav li:focus {border-bottom: 1px solid white;}
 
 /* social media links */
 .socials {
@@ -196,7 +201,13 @@ header > div {position: relative;}
     bottom: 50px;
 }
 
-.socials li {margin: 10px 0;}
+.socials li {
+    margin: 10px 0;
+    transition: all 0.3s;
+}
+
+.socials li:focus ,
+.socials li:hover {color: rgba(255, 255, 255, 0.836);}
 /* HEADER END */
 
 /* MAIN START */
@@ -346,6 +357,8 @@ button[type="submit"] {width: 150px;}
 
 /* contact information */
 .contact {text-align: right;}
+
+address span{display: block;}
 
 /* footer bar */
 .footer-bar {
